@@ -1,13 +1,13 @@
 # rng
-import json,random
+import json, random
 if __name__ == "__main__":
-  print("Run calculator_v3.py for it to work.")
+  print("Run calculator_v3.py for this to work")
 
 # main function
 def rng_function(rng_history):
   while True:
     try:
-      choice = int(input("1(continue), 2(view) or 3(clear) RNG history, or 4(back)?:"))
+      choice = int(input("\n1(continue), 2(view) or 3(clear) RNG history,\n4(back)?:"))
       match choice:
 
 # user inputs for RNG
@@ -45,7 +45,7 @@ def rng_function(rng_history):
 
 
     except ValueError:
-      print("Invalid input!")
+      print("Invalid input.")
       continue
     else:
       if dice > 1000 or dice < 1:
@@ -54,7 +54,7 @@ def rng_function(rng_history):
     results = []
     
 # number generation
-    for i in range(dice):
+    for _ in range(dice):
       num = random.randint(num1,num2)
       results.append(num)
       print(f"{num}")
