@@ -7,12 +7,16 @@ if __name__ == "__main__":
 def rng_function(rng_history):
   while True:
     try:
-      choice = int(input("\n1(continue), 2(view) or 3(clear) RNG history,\n4(back)?:"))
+      choice = int(input("""\n1) continue
+2) view history
+3) clear history 
+4) back
+>>>"""))
       match choice:
 
 # user inputs for RNG
         case 1:
-          num1 = input("Smallest number(default is 1):")
+          num1 = input("\nSmallest number(default is 1):")
           if num1 == "":
             num1 = 1
           else:
